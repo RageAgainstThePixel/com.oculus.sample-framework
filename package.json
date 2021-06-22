@@ -1,16 +1,17 @@
 {
   "name": "com.oculus.sample-framework",
-  "displayName": "Sample-Framework",
-  "description": "A Non-Official Mirror of the Oculus Sample-Framework as a UPM package for the Unity Game Engine.\r\n\r\nAll copyrights, trademarks, logoes, and assets are the property of their respective owners.",
+  "displayName": "Oculus Sample-Framework",
+  "description": "A Non-Official Mirror of the Oculus Sample-Framework as a UPM package for the Unity Game Engine.\r\n\r\nAll copyrights, trademarks, logos, and assets are the property of their respective owners.",
   "keywords": [],
-  "version": "29.0.0-preview.1",
+  "version": "29.0.0-preview.2",
   "unity": "2019.4",
   "license": "MIT",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "repository": "https://github.com/RageAgainstThePixel/com.oculus.sample-framework.git"
   },
-  "author": "Stephen Hodgson",
+  "author": "Facebook Technologies, LLC",
   "dependencies": {
-    "com.oculus.unity-integration": "29.0.0-preview.2"
+    "com.oculus.unity-integration": "29.0.0-preview.4"
   }
 }
