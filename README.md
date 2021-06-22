@@ -12,7 +12,7 @@ A Non-Official Mirror of the [Oculus Sample-Framework](https://developer.oculus.
 
 - Open your Unity project settings
 - Select the `Package Manager`
-![scoped-registries](Oculus%20Sample-Framework/Packages/com.oculus.sample-framework\Documentation~/images/package-manager-scopes.png)
+![scoped-registries](Oculus%20Sample-Framework/Packages/com.oculus.sample-framework/Documentation~/images/package-manager-scopes.png)
 - Add the OpenUPM package registry:
   - `Name: OpenUPM`
   - `URL: https://package.openupm.com`
