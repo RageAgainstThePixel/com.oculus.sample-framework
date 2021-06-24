@@ -13,5 +13,8 @@
   "author": "Facebook Technologies, LLC",
   "dependencies": {
     "com.oculus.unity-integration": "29.0.0-preview.4"
+  },
+  "publishConfig": {
+    "registry": "https://package.openupm.com"
   }
 }
