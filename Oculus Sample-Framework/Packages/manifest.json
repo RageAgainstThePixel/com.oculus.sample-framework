@@ -47,6 +47,13 @@
       "scopes": [
         "com.oculus"
       ]
+    },
+    {
+      "name": "xrtk",
+      "url": "http://upm.xrtk.io:4873",
+      "scopes": [
+        "com.xrtk"
+      ]
     }
   ]
 }
