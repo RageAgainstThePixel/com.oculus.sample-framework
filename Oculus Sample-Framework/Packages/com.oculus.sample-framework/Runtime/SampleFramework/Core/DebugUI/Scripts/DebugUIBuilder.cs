@@ -15,6 +15,7 @@ using UnityEngine.UI;
 #if UNITY_EDITOR
 using UnityEngine.SceneManagement;
 #endif
+using TMPro;
 
 public class DebugUIBuilder : MonoBehaviour
 {
@@ -31,6 +32,10 @@ public class DebugUIBuilder : MonoBehaviour
 
   [SerializeField]
   private RectTransform buttonPrefab = null;
+
+  [SerializeField]
+  private RectTransform[] additionalButtonPrefab = null;
+
   [SerializeField]
   private RectTransform labelPrefab = null;
   [SerializeField]
@@ -236,12 +241,30 @@ public class DebugUIBuilder : MonoBehaviour
     }
   }
 
-  public RectTransform AddButton(string label, OnClick handler, int targetCanvas = 0)
+  public RectTransform AddButton(string label, OnClick handler = null, int buttonIndex = -1, int targetCanvas = 0, bool highResolutionText = false)
   {
-    RectTransform buttonRT = GameObject.Instantiate(buttonPrefab).GetComponent<RectTransform>();
+    RectTransform buttonRT = null;
+    if(buttonIndex == -1)
+    {
+        buttonRT = GameObject.Instantiate(buttonPrefab).GetComponent<RectTransform>();
+    }
+    else
+    {
+        buttonRT = GameObject.Instantiate(additionalButtonPrefab[buttonIndex]).GetComponent<RectTransform>();
+    }
+
     Button button = buttonRT.GetComponentInChildren<Button>();
-    button.onClick.AddListener(delegate { handler(); });
-    ((Text)(buttonRT.GetComponentsInChildren(typeof(Text), true)[0])).text = label;
+    if(handler != null)
+    {
+        button.onClick.AddListener(delegate { handler(); });
+    }
+
+    if(highResolutionText){
+      ((TextMeshProUGUI)(buttonRT.GetComponentsInChildren(typeof(TextMeshProUGUI), true)[0])).text = label;
+    }
+    else{
+      ((Text)(buttonRT.GetComponentsInChildren(typeof(Text), true)[0])).text = label;
+    }
     AddRect(buttonRT, targetCanvas);
     return buttonRT;
   }

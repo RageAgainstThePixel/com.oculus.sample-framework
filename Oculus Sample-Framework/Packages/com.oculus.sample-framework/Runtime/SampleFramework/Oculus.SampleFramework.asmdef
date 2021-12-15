@@ -2,7 +2,8 @@
     "name": "Oculus.SampleFramework",
     "references": [
         "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
-        "GUID:7eecaac3435439943af85d99a47ed51c"
+        "GUID:7eecaac3435439943af85d99a47ed51c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
