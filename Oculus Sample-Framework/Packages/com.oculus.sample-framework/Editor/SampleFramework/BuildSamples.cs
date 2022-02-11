@@ -90,7 +90,9 @@ internal partial class OculusBuildSamples
 
     //Reach out to Irad Ratamasky(iradicator) or Rohit Rao (rohitrao) for issues related to enchanced compositor
     private static void BuildEnhancedOVROverlay() {
-        InitializeBuild("com.oculus.unitysample.enchancedovroverlay");
+        InitializeBuild("com.oculus.samples_2DPanel");
+        AddSplashScreen("/Assets/Oculus/SampleFramework/Core/OculusInternal/EnhancedOVROverlay/Textures/SplashScreen/STADIUM_White-01.png");
+        SetAppDetails("Oculus","2DPanel");
         BuildInternal("EnhancedOVROverlay"); //Scene is presnet in OculusInternal folder.
     }
 
@@ -140,5 +142,26 @@ internal partial class OculusBuildSamples
           buildPlayerOptions.locationPathName = apkName;
           buildPlayerOptions.scenes = scenes;
           BuildReport buildReport = BuildPipeline.BuildPlayer(buildPlayerOptions);
+    }
+
+    private static void AddSplashScreen(string path){
+        Texture2D companyLogo =  Resources.Load<Texture2D>(path);
+        PlayerSettings.virtualRealitySplashScreen = companyLogo;
+
+        var logos = new PlayerSettings.SplashScreenLogo[2];
+
+        // Company logo
+        Sprite companyLogoSprite = (Sprite)AssetDatabase.LoadAssetAtPath(path, typeof(Sprite));
+        logos[0] = PlayerSettings.SplashScreenLogo.Create(2.5f, companyLogoSprite);
+
+        // Set the Unity logo to be drawn after the company logo.
+        logos[1] = PlayerSettings.SplashScreenLogo.CreateWithUnityLogo();
+
+        PlayerSettings.SplashScreen.logos = logos;
+    }
+
+    private static void SetAppDetails(string companyName,string productName){
+        PlayerSettings.companyName = companyName;
+        PlayerSettings.productName = productName;
     }
 }
