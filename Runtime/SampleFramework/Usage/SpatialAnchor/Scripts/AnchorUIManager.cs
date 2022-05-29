@@ -21,7 +21,6 @@ public class AnchorUIManager : MonoBehaviour
 
     [SerializeField]
     private GameObject createModeButton_;
-
     [SerializeField]
     private GameObject selectModeButton_;
 
