@@ -243,7 +243,7 @@ public class LocomotionSampleSupport : MonoBehaviour
         orient.Thumbstick = OVRInput.Controller.Touch;
     }
 
-	/*
+    /*
     void SetupRightTurnLeftTeleport()
     {
         SetupTeleportDefaults();

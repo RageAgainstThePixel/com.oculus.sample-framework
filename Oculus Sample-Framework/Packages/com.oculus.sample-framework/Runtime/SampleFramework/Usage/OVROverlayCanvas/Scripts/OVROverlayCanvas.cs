@@ -23,14 +23,12 @@ public class OVROverlayCanvas : MonoBehaviour
 	private Shader _transparentShader = null;
 	[SerializeField, HideInInspector]
 	private Shader _opaqueShader = null;
-
     private RectTransform _rectTransform;
     private Canvas _canvas;
     private Camera _camera;
     private OVROverlay _overlay;
     private RenderTexture _renderTexture;
     private MeshRenderer _meshRenderer;
-
     private Mesh _quad;
     private Material _defaultMat;
 
@@ -55,7 +53,7 @@ public class OVROverlayCanvas : MonoBehaviour
 
 	private bool ScaleViewport = Application.isMobilePlatform;
 
-	// Start is called before the first frame update
+    // Start is called before the first frame update
     private void Start()
 	{
 		_canvas = GetComponent<Canvas>();
