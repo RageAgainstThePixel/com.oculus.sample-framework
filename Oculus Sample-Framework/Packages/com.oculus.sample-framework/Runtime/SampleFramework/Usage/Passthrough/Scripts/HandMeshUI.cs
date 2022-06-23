@@ -6,7 +6,6 @@ public class HandMeshUI : MonoBehaviour
 {
     public SphereCollider[] knobs;
     public TextMesh[] readouts;
-
     private int rightHeldKnob = -1;
     private int leftHeldKnob = -1;
 

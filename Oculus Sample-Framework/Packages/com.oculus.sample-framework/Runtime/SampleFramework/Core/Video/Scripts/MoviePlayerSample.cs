@@ -368,10 +368,10 @@ public class MoviePlayerSample : MonoBehaviour
         IsPlaying = false;
     }
 
-  /// <summary>
-  /// Pauses video playback when the app loses or gains focus
-  /// </summary>
-  private void OnApplicationPause(bool appWasPaused)
+    /// <summary>
+    /// Pauses video playback when the app loses or gains focus
+    /// </summary>
+    private void OnApplicationPause(bool appWasPaused)
     {
         Debug.Log("OnApplicationPause: " + appWasPaused);
         if (appWasPaused)

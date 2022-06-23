@@ -1,10 +1,10 @@
 /************************************************************************************
 
-Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.  
+Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.
 
-See SampleFramework license.txt for license terms.  Unless required by applicable law 
-or agreed to in writing, the sample code is provided “AS IS” WITHOUT WARRANTIES OR 
-CONDITIONS OF ANY KIND, either express or implied.  See the license for specific 
+See SampleFramework license.txt for license terms.  Unless required by applicable law
+or agreed to in writing, the sample code is provided “AS IS” WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied.  See the license for specific
 language governing permissions and limitations under the license.
 
 ************************************************************************************/
@@ -52,7 +52,6 @@ namespace OculusSampleFramework
 
         [SerializeField]
         private float m_objectPullVelocity = 10.0f;
-
         private float m_objectPullMaxRotationRate = 360.0f; // max rotation rate in degrees per second
 
         private bool m_movingObjectToHand = false;
@@ -67,7 +66,6 @@ namespace OculusSampleFramework
         private int m_grabObjectsInLayer = 0;
         [SerializeField]
         private int m_obstructionLayer = 0;
-
         private DistanceGrabber m_otherHand;
 
         protected DistanceGrabbable m_target;

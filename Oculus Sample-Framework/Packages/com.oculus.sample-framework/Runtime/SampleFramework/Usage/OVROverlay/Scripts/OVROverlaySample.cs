@@ -1,10 +1,10 @@
 /************************************************************************************
 
-Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.  
+Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.
 
-See SampleFramework license.txt for license terms.  Unless required by applicable law 
-or agreed to in writing, the sample code is provided “AS IS” WITHOUT WARRANTIES OR 
-CONDITIONS OF ANY KIND, either express or implied.  See the license for specific 
+See SampleFramework license.txt for license terms.  Unless required by applicable law
+or agreed to in writing, the sample code is provided “AS IS” WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied.  See the license for specific
 language governing permissions and limitations under the license.
 
 ************************************************************************************/
@@ -46,7 +46,6 @@ namespace OculusSampleFramework
         /// The string identifiers for DebugUI radio buttons
         /// </summary>
         private const string ovrOverlayID = "OVROverlayID";
-
         private const string applicationID = "ApplicationID";
         private const string noneID = "NoneID";
 
@@ -54,7 +53,6 @@ namespace OculusSampleFramework
         /// Toggle references
         /// </summary>
         private Toggle applicationRadioButton;
-
         private Toggle noneRadioButton;
         
         [Header("App vs Compositor Comparison Settings")]
@@ -155,7 +153,7 @@ namespace OculusSampleFramework
         #endregion
 
         #region Private Functions
-        
+
         /// <summary>
         /// Usage: Activate the world geometry and deactivate OVROverlay display
         /// </summary>

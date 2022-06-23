@@ -49,7 +49,6 @@ public class MoviePlayerSampleControls : MonoBehaviour
 
     private PlaybackState _state = PlaybackState.Playing;
 
-
     private void Start()
     {
         PlayPause.onButtonDown += OnPlayPauseClicked;
