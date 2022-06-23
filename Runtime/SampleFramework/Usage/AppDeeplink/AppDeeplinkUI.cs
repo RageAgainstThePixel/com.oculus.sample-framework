@@ -8,14 +8,11 @@ public class AppDeeplinkUI : MonoBehaviour
     // these are just for illustration, you'll need to modify them to match your own app ids
     private const ulong UNITY_COMPANION_APP_ID = 3535750239844224;
     private const ulong UNREAL_COMPANION_APP_ID = 4055411724486843;
-
     private RectTransform deeplinkAppId;
     private RectTransform deeplinkMessage;
-
     private RectTransform uiLaunchType;
     private RectTransform uiLaunchSource;
     private RectTransform uiDeepLinkMessage;
-
     private bool inMenu = true;
 
     // Start is called before the first frame update

@@ -48,7 +48,6 @@ namespace OVRTouchSample
         private Collider[] m_colliders = null;
         private bool m_collisionEnabled = true;
         private OVRGrabber m_grabber;
-
         private List<Renderer> m_showAfterInputFocusAcquired;
 
         private int m_animLayerIndexThumb = -1;

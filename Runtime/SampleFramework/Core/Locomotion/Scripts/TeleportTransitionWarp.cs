@@ -41,11 +41,11 @@ public class TeleportTransitionWarp : TeleportTransition
 		StartCoroutine(DoWarp());
 	}
 
-	/// <summary>
-	/// This coroutine will be active during the teleport transition and will move the camera 
-	/// according to the PositionLerp curve.
-	/// </summary>
-	/// <returns></returns>
+    /// <summary>
+    /// This coroutine will be active during the teleport transition and will move the camera 
+    /// according to the PositionLerp curve.
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator DoWarp()
 	{
 		LocomotionTeleport.IsTransitioning = true;

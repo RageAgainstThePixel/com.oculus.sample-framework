@@ -6,7 +6,6 @@ public class BrushController : MonoBehaviour
 {
     public PassthroughBrush brush;
     public MeshRenderer backgroundSphere;
-
     private IEnumerator grabRoutine;
     private IEnumerator releaseRoutine;
 
