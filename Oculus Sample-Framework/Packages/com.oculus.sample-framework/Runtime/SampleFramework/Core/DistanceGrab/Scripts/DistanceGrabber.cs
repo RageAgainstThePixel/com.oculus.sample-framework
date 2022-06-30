@@ -52,6 +52,7 @@ namespace OculusSampleFramework
 
         [SerializeField]
         private float m_objectPullVelocity = 10.0f;
+
         private float m_objectPullMaxRotationRate = 360.0f; // max rotation rate in degrees per second
 
         private bool m_movingObjectToHand = false;
@@ -66,6 +67,7 @@ namespace OculusSampleFramework
         private int m_grabObjectsInLayer = 0;
         [SerializeField]
         private int m_obstructionLayer = 0;
+
         private DistanceGrabber m_otherHand;
 
         protected DistanceGrabbable m_target;

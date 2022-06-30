@@ -34,15 +34,15 @@ public class VolumeAndPlaneSwitcher : MonoBehaviour
     Destroy(gameObject);
   }
 
-    private void Start()
+  private void Start()
   {
     var classification = GetComponent<OVRSemanticClassification>();
     if (!classification)
-        {
-            return;
-        }
+    {
+        return;
+    }
 
-        foreach (LabelGeometryPair pair in desiredSwitches)
+    foreach (LabelGeometryPair pair in desiredSwitches)
     {
       if (classification.Contains(pair.label))
       {

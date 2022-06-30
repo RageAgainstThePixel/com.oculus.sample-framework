@@ -29,11 +29,11 @@ public class BouncingBallLogic : MonoBehaviour
   private void Update()
   {
     if (!isReleased)
-        {
-            return;
-        }
+    {
+        return;
+    }
 
-        UpdateVisibility();
+    UpdateVisibility();
     timer += Time.deltaTime;
     if (!isReadyForDestroy && timer >= TTL)
     {

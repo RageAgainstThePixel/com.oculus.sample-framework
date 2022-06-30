@@ -11,6 +11,7 @@ public class FlashlightController : MonoBehaviour
     private Quaternion localRotation = Quaternion.identity;
     public TextMesh infoText;
     private GrabObject externalController = null;
+
     private OVRSkeleton[] skeletons;
     private OVRHand[] hands;
     private int handIndex = -1;

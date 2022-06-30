@@ -47,10 +47,10 @@ public abstract class TeleportInputHandler : TeleportSupport
 		base.RemoveEventHandlers();
 	}
 
-    /// <summary>
-    /// This coroutine will be active while the teleport system is in the Ready state.
-    /// </summary>
-    /// <returns></returns>
+	/// <summary>
+	/// This coroutine will be active while the teleport system is in the Ready state.
+	/// </summary>
+	/// <returns></returns>
     private IEnumerator TeleportReadyCoroutine()
 	{
 		while (GetIntention() != LocomotionTeleport.TeleportIntentions.Aim)
@@ -60,12 +60,12 @@ public abstract class TeleportInputHandler : TeleportSupport
 		LocomotionTeleport.CurrentIntention = LocomotionTeleport.TeleportIntentions.Aim;
 	}
 
-    /// <summary>
-    /// This coroutine will be active while the teleport system is in the Aim or PreTeleport state.
-    /// It remains active in both the Aim and PreTeleport states because these states are the ones that 
-    /// need to switch to different states based on the user intention as detected by the input handler.
-    /// </summary>
-    /// <returns></returns>
+	/// <summary>
+	/// This coroutine will be active while the teleport system is in the Aim or PreTeleport state.
+	/// It remains active in both the Aim and PreTeleport states because these states are the ones that 
+	/// need to switch to different states based on the user intention as detected by the input handler.
+	/// </summary>
+	/// <returns></returns>
     private IEnumerator TeleportAimCoroutine()
 	{
 		LocomotionTeleport.TeleportIntentions intention = GetIntention();
