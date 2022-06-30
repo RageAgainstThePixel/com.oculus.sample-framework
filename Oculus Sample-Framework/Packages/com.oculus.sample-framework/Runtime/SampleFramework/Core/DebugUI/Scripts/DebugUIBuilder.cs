@@ -75,10 +75,10 @@ public class DebugUIBuilder : MonoBehaviour
   private Vector2[] insertPositions;
   private List<RectTransform>[] insertedElements;
   private Vector3 menuOffset;
-    private OVRCameraRig rig;
+  private OVRCameraRig rig;
   private Dictionary<string, ToggleGroup> radioGroups = new Dictionary<string, ToggleGroup>();
-    private LaserPointer lp;
-    private LineRenderer lr;
+  private LaserPointer lp;
+  private LineRenderer lr;
 
   public LaserPointer.LaserBeamBehavior laserBeamBehavior;
   public bool isHorizontal = false;
@@ -149,11 +149,11 @@ public class DebugUIBuilder : MonoBehaviour
     transform.eulerAngles = newEulerRot;
 
     if (reEnable == null || reEnable.Length < toDisable.Count)
-        {
-            reEnable = new bool[toDisable.Count];
-        }
+    {
+        reEnable = new bool[toDisable.Count];
+    }
 
-        reEnable.Initialize();
+    reEnable.Initialize();
     int len = toDisable.Count;
     for (int i = 0; i < len; ++i)
     {
@@ -297,21 +297,22 @@ public class DebugUIBuilder : MonoBehaviour
   {
     RectTransform buttonRT = null;
     if(buttonIndex == -1)
-        {
-            buttonRT = GameObject.Instantiate(buttonPrefab).GetComponent<RectTransform>();
-        }
-        else
-        {
-            buttonRT = GameObject.Instantiate(additionalButtonPrefab[buttonIndex]).GetComponent<RectTransform>();
-        }
+    {
+        buttonRT = GameObject.Instantiate(buttonPrefab).GetComponent<RectTransform>();
+    }
+    else
+    {
+        buttonRT = GameObject.Instantiate(additionalButtonPrefab[buttonIndex]).GetComponent<RectTransform>();
+    }
 
-        Button button = buttonRT.GetComponentInChildren<Button>();
+    Button button = buttonRT.GetComponentInChildren<Button>();
     if(handler != null)
-        {
-            button.onClick.AddListener(delegate { handler(); });
-        }
+    {
+        button.onClick.AddListener(delegate { handler(); });
+    }
 
-        if (highResolutionText){
+
+    if(highResolutionText){
         ((TextMeshProUGUI)(buttonRT.GetComponentsInChildren(typeof(TextMeshProUGUI), true)[0])).text = label;
       }
       else{
@@ -380,11 +381,11 @@ public class DebugUIBuilder : MonoBehaviour
     buttonText.text = label;
     Toggle tb = rt.GetComponentInChildren<Toggle>();
     if (group == null)
-        {
-            group = "default";
-        }
+    {
+        group = "default";
+    }
 
-        ToggleGroup tg = null;
+    ToggleGroup tg = null;
     bool isFirst = false;
     if (!radioGroups.ContainsKey(group))
     {

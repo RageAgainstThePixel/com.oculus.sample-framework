@@ -128,7 +128,7 @@ public class SpatialAnchorLoader : MonoBehaviour
         }
 
         // Get number of saved anchor uuids
-        if (!PlayerPrefs.HasKey(Anchor.NumUuidsPlayerPref))
+		if (!PlayerPrefs.HasKey(Anchor.NumUuidsPlayerPref))
 		{
 			PlayerPrefs.SetInt(Anchor.NumUuidsPlayerPref, 0);
 		}

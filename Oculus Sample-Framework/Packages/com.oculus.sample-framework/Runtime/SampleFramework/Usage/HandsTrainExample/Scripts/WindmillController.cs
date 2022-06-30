@@ -17,7 +17,8 @@ namespace OculusSampleFramework
 	public class WindmillController : MonoBehaviour
 	{
 		[SerializeField] private GameObject _startStopButton = null;
-		[SerializeField] private float _maxSpeed = 10f;
+		[SerializeField]
+        private float _maxSpeed = 10f;
 		[SerializeField] private SelectionCylinder _selectionCylinder = null;
 
 		private WindmillBladesController _bladesRotation;
