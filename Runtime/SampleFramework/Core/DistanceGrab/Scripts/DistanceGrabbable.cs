@@ -18,6 +18,7 @@ namespace OculusSampleFramework
     public class DistanceGrabbable : OVRGrabbable
     {
         public string m_materialColorField;
+
         private GrabbableCrosshair m_crosshair;
         private GrabManager m_crosshairManager;
         private Renderer m_renderer;

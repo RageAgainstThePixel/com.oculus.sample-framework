@@ -8,15 +8,14 @@ public class ObjectManipulator : MonoBehaviour
 {
     private OVRInput.Controller controller = OVRInput.Controller.RTouch;
     private GameObject hoverObject = null;
-    private GameObject grabObject = null;
 
+    private GameObject grabObject = null;
     // all-purpose timer to use for blending after object is grabbed/released
     private float grabTime = 0.0f;
-
     // the grabbed object's transform relative to the controller
     private Vector3 localGrabOffset = Vector3.zero;
-    private Quaternion localGrabRotation = Quaternion.identity;
 
+    private Quaternion localGrabRotation = Quaternion.identity;
     // the camera and grabbing hand's world position when grabbing
     private Vector3 camGrabPosition = Vector3.zero;
     private Quaternion camGrabRotation = Quaternion.identity;

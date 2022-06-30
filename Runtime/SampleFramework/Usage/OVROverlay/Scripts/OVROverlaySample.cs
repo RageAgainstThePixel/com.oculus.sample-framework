@@ -46,6 +46,7 @@ namespace OculusSampleFramework
         /// The string identifiers for DebugUI radio buttons
         /// </summary>
         private const string ovrOverlayID = "OVROverlayID";
+
         private const string applicationID = "ApplicationID";
         private const string noneID = "NoneID";
 
@@ -53,6 +54,7 @@ namespace OculusSampleFramework
         /// Toggle references
         /// </summary>
         private Toggle applicationRadioButton;
+
         private Toggle noneRadioButton;
         
         [Header("App vs Compositor Comparison Settings")]
@@ -153,7 +155,7 @@ namespace OculusSampleFramework
         #endregion
 
         #region Private Functions
-
+        
         /// <summary>
         /// Usage: Activate the world geometry and deactivate OVROverlay display
         /// </summary>

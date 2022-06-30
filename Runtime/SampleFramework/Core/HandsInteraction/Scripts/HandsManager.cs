@@ -21,8 +21,10 @@ namespace OculusSampleFramework
 	{
 		private const string SKELETON_VISUALIZER_NAME = "SkeletonRenderer";
 
-		[SerializeField] private GameObject _leftHand = null;
-		[SerializeField] private GameObject _rightHand = null;
+		[SerializeField]
+        private GameObject _leftHand = null;
+		[SerializeField]
+        private GameObject _rightHand = null;
 
 		public HandsVisualMode VisualMode = HandsVisualMode.Mesh;
 		private OVRHand[] _hand = new OVRHand[(int)OVRHand.Hand.HandRight + 1];

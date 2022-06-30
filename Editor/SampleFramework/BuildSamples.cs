@@ -61,7 +61,6 @@ internal partial class OculusBuildSamples
         // TODO: enable OpenXR so Passthrough works
         Build("Passthrough");
     }
-
     //needs openXR backend in ovrplugin
     private static void BuildBouncingBall() {
         InitializeBuild("com.oculus.unitysample.bouncingball");
@@ -79,7 +78,6 @@ internal partial class OculusBuildSamples
         InitializeBuild("com.oculus.unitysample.virtualfurniture");
         Build("VirtualFurniture");
     }
-
     //Reach out to Irad Ratamasky(iradicator) or Rohit Rao (rohitrao) for issues related to enchanced compositor
     private static void BuildEnhancedOVROverlay() {
         InitializeBuild("com.oculus.samples_2DPanel");

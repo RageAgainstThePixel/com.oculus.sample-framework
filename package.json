@@ -3,7 +3,7 @@
   "displayName": "Oculus Sample-Framework",
   "description": "A Non-Official Mirror of the Oculus Sample-Framework as a UPM package for the Unity Game Engine.\r\n\r\nAll copyrights, trademarks, logos, and assets are the property of their respective owners.",
   "keywords": [],
-  "version": "40.0.0",
+  "version": "41.0.0-preview.1",
   "unity": "2021.3",
   "license": "MIT",
   "repository": {
@@ -12,7 +12,7 @@
   },
   "author": "Facebook Technologies, LLC",
   "dependencies": {
-    "com.oculus.unity-integration": "40.0.0"
+    "com.oculus.unity-integration": "41.0.0-preview.1"
   },
   "publishConfig": {
     "registry": "https://package.openupm.com"
